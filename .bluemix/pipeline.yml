@@ -1,6 +1,6 @@
 ---
 stages:
-- name: Build Stage
+- name: esa build
   inputs:
   - type: git
     branch: master
@@ -9,7 +9,7 @@ stages:
   jobs:
   - name: Build
     type: builder
-- name: Deploy Stage
+- name: esa deploy
   inputs:
   - type: job
     stage: Build Stage
